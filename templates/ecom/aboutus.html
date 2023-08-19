@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ECOMKART</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">ECOMKART users can choose between
+  English and 11 Indian languages. Our
+  teams built vernacular support in just
+  2.5 years, most of it while working
+  remotely! </h3>
+
+<h1>We're known more by the impact we create
+  than the titles we hold. Impact that is brought by
+  working together on audacious challenges at scale
+  with an aim to revolutionize for the Indian customer.
+  We believe great ideas can emerge from anywhere
+  and must be backed. Our people - backed by our
+  culture of end-to-end ownership - have revolutionised
+  India's e-commerce sector - several times over!</h1>
+<h2>developed by Balmiki</h>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+<!--
+developed By :Balmiki kumar
+-->
+
+</html>
